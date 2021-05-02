@@ -27,19 +27,21 @@
     
     alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
       
-    if(confirmButtonText != NULL){
+    if(cancelButtonText != [NSNull null]){
+      [alert addAction:[UIAlertAction actionWithTitle:cancelButtonText style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
+            result([NSNumber numberWithBool:false]);
+          }
+       ]];
+    }
+      
+    if(confirmButtonText != [NSNull null]){
       [alert addAction:[UIAlertAction actionWithTitle:confirmButtonText style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
             result([NSNumber numberWithBool:true]);
           }
        ]];
     }
       
-    if(cancelButtonText != NULL){
-        [alert addAction:[UIAlertAction actionWithTitle:cancelButtonText style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
-              result([NSNumber numberWithBool:false]);
-            }
-         ]];
-    }
+
       
     [rootVC presentViewController:alert animated:true completion:nil];
       
