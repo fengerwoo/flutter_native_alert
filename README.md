@@ -26,7 +26,7 @@ bool ret = await FlutterNativeAlert.getInstance().showConfirm(
 /// If you need to close the Dialog in the code
 FlutterNativeAlert.getInstance().hideConfirm();
 ```
-<img src="doc/assets/android_dialog.png" width="300"/> <img src="doc/assets/ios_dialog.png" width="340"/>
+<img src="https://raw.githubusercontent.com/fengerwoo/flutter_native_alert/main/doc/assets/android_dialog.png" width="300"/> <img src="https://raw.githubusercontent.com/fengerwoo/flutter_native_alert/main/doc/assets/ios_dialog.png" width="340"/>
 <br/><br/>
 
 #####  Native Toast for Android and iOS
@@ -34,5 +34,5 @@ FlutterNativeAlert.getInstance().hideConfirm();
 /// Pass in the string to be displayed, the default display time is 1.5 seconds
 FlutterNativeAlert.getInstance().showToast("I'm a Toast", duration: Duration(milliseconds: 1500));
 ```
-<img src="doc/assets/android_toast.png" width="300"/> <img src="doc/assets/ios_toast.png" width="340"/>
+<img src="https://raw.githubusercontent.com/fengerwoo/flutter_native_alert/main/doc/assets/android_toast.png" width="300"/> <img src="https://raw.githubusercontent.com/fengerwoo/flutter_native_alert/main/doc/assets/ios_toast.png" width="340"/>
 <br/><br/>
