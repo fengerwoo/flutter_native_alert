@@ -8,7 +8,7 @@
 
 ```yaml
 dependencies:
-  flutter_native_alert: ^1.1.0
+  flutter_native_alert: ^1.2.0
 ```
 
 ### Usage and screenshots
